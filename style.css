@@ -32,11 +32,14 @@ img {
   height: auto;
 }
 
+blockquote {
+	font-size: 14px;
+}
+
 span.imageblock {
   max-width: 100%;
   height: auto;
 }
-
 
 /* Syntax highlighter */
 
@@ -74,7 +77,7 @@ span.imageblock {
 /* Navigation */
 
 .navbar {
-  transition: all ease .3s;
+  transition: all ease .5s;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -115,23 +118,23 @@ nav.navbar-inverse .navbar-nav>li {
   text-shadow: 0px 0px 3px #222;
 }
 
-nav.navbar-inverse .navbar-nav>li>a {
+nav.navbar-inverse .navbar-nav > li > a {
   color: #fff;
 }
 
-nav.navbar-inverse .navbar-nav>li>a:hover {
+nav.navbar-inverse .navbar-nav > li > a:hover {
   color: #eee;
 }
 
-nav.navbar-inverse .navbar-nav>li>a:visited {
+nav.navbar-inverse .navbar-nav > li > a:visited {
   color: #eee;
 }
 
-nav.navbar-inverse .navbar-nav>li>a:focus {
+nav.navbar-inverse .navbar-nav > li > a:focus {
   color: #eee;
 }
 
-nav.navbar-inverse .navbar-nav>li.dropdown>ul>li {
+nav.navbar-inverse .navbar-nav > li.dropdown > ul > li {
   color: #fff;
   text-shadow: 0px 0px 0px;
 }
@@ -159,6 +162,7 @@ nav.navbar-inverse.shrink .navbar-brand {
 /* Jumbotron */
 
 body > .jumbotron {
+	margin-bottom: 0px;
   padding: 0px;
   background-image: url('./images/blog_title_1920.png');
   background-repeat: no-repeat;
@@ -398,7 +402,7 @@ a i {
 }
 
 .widget {
-  border-bottom: 1px solid #ccc;
+  /* border-bottom: 1px solid #ccc; */
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
@@ -462,13 +466,12 @@ a i {
 /* Sidebar */
 
 .sidebar h3 {
+	color: #2c3e50;
   font-size: 16px;
   font-weight: 500;
   text-align: left;
-  background-color: #2c3e50;
-  padding: 10px;
-  border-radius: 10px;
-  color: #fff;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #eee;
 }
 
 .sidebar h3 i {
@@ -590,7 +593,7 @@ a i {
 }
 
 #tagbox ul li:after {
-  content: ",";
+  content: ", ";
 }
 
 #tagbox ul li:last-child:after {
@@ -847,9 +850,6 @@ input#tab1:checked~.tab_container>#tab1Container, input#tab2:checked~.tab_contai
 /* Responsive */
 
 @media (max-width: 767px) {
-  .carousel {
-    top: 80px;
-  }
 	body > .jumbotron {
 		margin-top: 80px;
 	}
