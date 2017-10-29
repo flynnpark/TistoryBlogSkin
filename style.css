@@ -582,19 +582,14 @@ a i {
 
 #tagbox ul li {
   display: inline-block;
-	min-width: 10px;
-	padding: 3px 7px;
-	font-size: 12px;
-	line-height: 1;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	background-color: #777;
-	border-radius: 10px;
 }
 
-#tagbox ul li a {
-	color: #fff;
+#tagbox ul li:after {
+  content: ", ";
+}
+
+#tagbox ul li:last-child:after {
+  content: "";
 }
 
 
@@ -779,8 +774,8 @@ span.interword {
 
 #calendar a.cal_click {
   background-color: #0f7864;
-  display: inline-block;
-  padding: 3px 7px;
+  display: inline;
+  padding: .2em .6em .2em;
   font-size: 100%;
   font-weight: bold;
   line-height: 1;
@@ -788,7 +783,7 @@ span.interword {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 10px;
+  border-radius: .25em;
 }
 
 caption.cal_month {
