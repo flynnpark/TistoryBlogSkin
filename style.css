@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 html, body, h1, h2, h3, h4, h5, h6, p, input, button, textarea, .btn {
   font-family: 'Roboto', 'Noto Sans KR';
-  font-weight: 250;
+  font-weight: 400;
 }
 
 p {
@@ -581,15 +581,38 @@ a i {
 }
 
 #tagbox ul li {
+	display: inline-block;
+}
+
+#tagbox ul li a {
   display: inline-block;
+	min-width: 10px;
+	padding: 3px 7px;
+	font-size: 12px;
+	line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+  color: #fff;
+	background-color: #ccc;
+	border-radius: 10px;
 }
 
-#tagbox ul li:after {
-  content: ", ";
+#tagbox ul li .cloud1{
+  background-color: #d9534f;
+;
 }
 
-#tagbox ul li:last-child:after {
-  content: "";
+#tagbox ul li .cloud2{
+  background-color: #f0ad4e;
+}
+
+#tagbox ul li .cloud3{
+  background-color: #5cb85c;
+}
+
+#tagbox ul li .cloud4{
+  background-color: #5bc0de;
 }
 
 
@@ -774,8 +797,8 @@ span.interword {
 
 #calendar a.cal_click {
   background-color: #0f7864;
-  display: inline;
-  padding: .2em .6em .2em;
+  display: inline-block;
+  padding: 3px 7px;
   font-size: 100%;
   font-weight: bold;
   line-height: 1;
@@ -783,7 +806,7 @@ span.interword {
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: .25em;
+  border-radius: 10px;
 }
 
 caption.cal_month {
